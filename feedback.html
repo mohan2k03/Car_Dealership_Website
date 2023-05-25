@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="aboutme">
+
+    <!--====================Navbar Section Start======================-->
+
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <a href="" class="navbar-brand"><span>NA</span> Dealership</a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                <li class="nav-item"><a href="cars.html" class="nav-link">Cars</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--====================Navbar Section End======================-->
+
+    <!--====================Feedback Section End======================-->
+
+    <section>
+        <div class="container feedback">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="cars/phantom 3.png" alt="" class="img-fluid">
+                </div>
+                <div class="offset-sm-2 col-sm-5">
+                    <form action="feedback.php" method="post">
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Fullname</label>
+                            <input type="text" name="fullname" required class="font-weight-bold form-control" placeholder="Enter your Fullname">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">E-mail</label>
+                            <input type="email" name="email" required class="font-weight-bold form-control" placeholder="Enter your E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Phone Number</label>
+                            <input type="text" name="phone" required class="font-weight-bold form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-weight-bold">Give Us Your Feedback</label>
+                            <textarea name="feedback" required class="font-weight-bold form-control" rows="6" placeholder="Ask us your queries"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================feedback Section End======================-->
+
+    <!--====================Footer Section Starts======================-->
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_top">
+                <div class="company_info">
+                    <h2 class="company_logo">NA</h2>
+                    <p class="company_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    
+                    <span class="copyright"> &copy; 2023 NA Dealership, All rigths reserved.</span>
+                </div>
+                <div class="footer_info">
+                    <h6 class="footer_title">NA Dealership</h6>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <a href="about.html" class="footer_list-link">About</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="feedback.html" class="footer_list-link">Feedback</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="cars.html" class="footer_list-link">Cars</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="home.html" class="footer_list-link">Home</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_info">
+                    <h6 class="footer_title">Contact</h6>
+                    <ul class="footer_list">
+                        <li class="footer_list-item">
+                            <a href="#" class="footer_list-link">
+                                <i class="fab fa-facebook"></i> Mohan Singh
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer_list-link" href="#"><i class="fab fa-whatsapp"></i> +91 9867072359</a>
+                        </li>
+                        <li>
+                            <a class="footer_list-link" href="#"><i class="fab fa-instagram"></i> mohan2k03</a>
+                        </li>
+                        <li>
+                            <a class="footer_list-link" href="#"><i class="fab fa-twitter"></i> mohan2k03</a>
+                        </li>
+                        <li>
+                            <a class="footer_list-link" href="#"><i class="fab fa-snapchat"></i> mohan.2653</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--====================Footer Section End======================-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).scroll(function () {
+            $(".navbar").toggleClass("scroll", $(this).scrollTop() > $(".navbar").height());
+        })
+    </script>
+
+</body>
+
+</html>
